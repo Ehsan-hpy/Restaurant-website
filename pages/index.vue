@@ -1,9 +1,7 @@
 <template>
-  <section
-    class="h-lvh flex items-center justify-center bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat relative -z-20"
-  >
-    <div class="max-w-lg text">
-      <h1 class="text-7xl">
+  <section class="h-lvh flex items-center justify-center gap-4 z-10">
+    <div class="max-w-lg title-rotate space-y-4">
+      <h1 class="text-6xl">
         Enjoy Our <br />
         Delicious Meal
       </h1>
@@ -14,7 +12,7 @@
       </p>
     </div>
 
-    <div class="max-w-md">
+    <div class="max-w-sm overflow-hidden">
       <img class="pizza-image" src="/main-page-pizza-image.png" alt="pizza" />
     </div>
   </section>
@@ -23,20 +21,8 @@
 <script setup></script>
 
 <style scoped>
-section::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(5 19 60 / 70%);
-  z-index: -10;
-}
-
 .pizza-image {
-  animation: image-spin 15s linear infinite;
+  animation: image-spin 20s linear infinite;
 }
 
 @keyframes image-spin {
@@ -46,6 +32,22 @@ section::before {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.title-rotate {
+  animation: rotate 0.8s ease-in;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>
