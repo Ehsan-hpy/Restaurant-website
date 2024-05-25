@@ -20,17 +20,17 @@
   </nav>
 
   <div
-    class="bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat w-full absolute -z-20 bg-blur-color"
-  >
-    <slot />
-  </div>
+    class="h-auto min-h-lvh bg-[url('/bg-main.jpg')] bg-cover bg-no-repeat w-full fixed -z-20 bg-blur-color"
+  ></div>
+
+  <slot />
 </template>
 
 <script setup>
 const pages = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
-  { name: "About", url: "/home" },
+  { name: "Menu", url: "/menu" },
   { name: "Contact", url: "/home" },
 ];
 </script>
@@ -44,7 +44,7 @@ const pages = [
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(5 19 60 / 70%);
+  background-color: rgb(4 7 38 / 82%);
   z-index: -10;
 }
 

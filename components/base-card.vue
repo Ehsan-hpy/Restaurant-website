@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-60 h-60 p-4 flex flex-col items-center rounded-xl text-center even:-mb-60 duration-500 hover:shadow-gray-300 hover:shadow-lg"
+    class="w-60 h-60 p-4 flex flex-col items-center rounded-xl text-center md:even:-mb-60 duration-500 even:text-purple-400 text-blue-400 hover:shadow-gray-900 hover:shadow-2xl"
   >
     <header class="text-5xl">
       <slot name="header"> </slot>

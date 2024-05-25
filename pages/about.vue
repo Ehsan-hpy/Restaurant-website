@@ -1,5 +1,5 @@
 <template>
-  <section class="h-lvh flex flex-col items-center justify-center gap-20">
+  <section class="min-h-lvh flex flex-col items-center pt-28 gap-20">
     <div
       class="flex gap-2 bg-gradient-to-r from-purple-300 to-purple-400 text-transparent bg-clip-text"
     >
@@ -8,7 +8,9 @@
       <h1 class="text-6xl">Resto</h1>
     </div>
 
-    <div class="grid items-center grid-cols-4 gap-4">
+    <div
+      class="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+    >
       <BaseCard>
         <template #header>
           <UIcon name="i-heroicons-user" />
