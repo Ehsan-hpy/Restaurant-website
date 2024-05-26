@@ -15,4 +15,8 @@
   opacity: 0;
   filter: blur(1rem);
 }
+
+body {
+  font-family: "Rubik", sans-serif;
+}
 </style>

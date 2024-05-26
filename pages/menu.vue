@@ -1,7 +1,10 @@
 <template>
-  <div>menu</div>
+  <section class="h-lvh flex flex-col justify-center">
+    <div>
+      <font-awesome-icon icon="fa-solid fa-user-secret" />
+    </div>
+  </section>
 </template>
 
-<script lang="ts" setup></script>
-
+<script setup></script>
 <style></style>
