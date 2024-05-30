@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-lvh flex flex-col items-center pt-28 gap-20">
+  <section class="min-h-lvh flex flex-col items-center pt-52 gap-28">
     <div
       class="flex gap-2 bg-gradient-to-r from-purple-300 to-purple-400 text-transparent bg-clip-text"
     >
