@@ -7,6 +7,7 @@
       :class="{
         breakfast: category === 'breakfast',
         lunch: category === 'lunch',
+        dinner: category === 'dinner',
       }"
     >
       <div>
@@ -34,6 +35,9 @@ const defnieCat = computed(() => {
   }
   if (props.category === "lunch") {
     return lunchItems;
+  }
+  if (props.category === "dinner") {
+    return dinnerItems;
   }
 });
 
@@ -90,15 +94,46 @@ const breakFastItems = [
     id: 8,
   },
 ];
+
+const dinnerItems = [
+  {
+    name: "Crosan",
+    price: 20,
+    imageSrc: "/menu images/burger.jpg",
+    id: 9,
+  },
+  {
+    name: "Crosan",
+    price: 20,
+    imageSrc: "/menu images/burger.jpg",
+    id: 10,
+  },
+  {
+    name: "Crosan",
+    price: 20,
+    imageSrc: "/menu images/burger.jpg",
+    id: 11,
+  },
+  {
+    name: "Crosan",
+    price: 20,
+    imageSrc: "/menu images/burger.jpg",
+    id: 12,
+  },
+];
 </script>
 
 <style scoped>
-.lunch {
-  @apply from-orange-300 to-orange-400;
+.breakfast {
+  @apply from-yellow-200 to-gray-300;
 }
 
-.breakfast {
-  @apply from-red-300 to-red-400;
+.lunch {
+  @apply from-orange-300 to-gray-300;
+}
+
+.dinner {
+  @apply from-red-200 to-gray-300;
 }
 
 .animate-rotate {
